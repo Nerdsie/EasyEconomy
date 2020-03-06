@@ -1,0 +1,20 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+version: ${project.version}
+description: ${project.description}
+author: NerdsWBNerds
+url: ${project.url}
+softdepend: [MyAPI, MyUniversal]
+commands:
+  economy:
+    description: General economy commands.
+    usage: /eco <give|take|set|> <player> <amount>
+    aliases: [eco, e]
+  pay:
+    description: Send a player money.
+    usage: /<command> <player> <amount>
+    aliases: [send, trans, transfer]
+  balance:
+    description: Display the balance in your bank.
+    usage: /<command>
+    aliases: [bal, money, gold, b, g]
